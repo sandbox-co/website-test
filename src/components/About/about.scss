@@ -1,12 +1,13 @@
 #about {
 	justify-content: center;
-	padding-top: 50px;
+	/*padding-top: 50px;*/
 }
 
 .about-background-gradient {
 	position: absolute;
+	top: 90vh;
 	width: 100vw;
-	padding: 200px;
+	padding: 250px;
 	background: radial-gradient(307.00px at 49.47% 49.85%, #000AFD 0%, #9554FF 100%);
 	transform: rotate(172deg);
 }

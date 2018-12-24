@@ -19,11 +19,11 @@ const About = props => {
 			</div>
 			<Parallax
 				className="subtitle white"
-				offsetYMax={"150px"}
-				offsetYMin={"-150px"}
+				offsetYMax={"200px"}
+				offsetYMin={"-200px"}
 				slowerScrollRate
 			>
-				<div style={{ height: "150px" }} />
+				<div style={{ height: "170px" }} />
 				we turn creative students into technical superstars
 			</Parallax>
 		</Element>
