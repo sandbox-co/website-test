@@ -1,0 +1,59 @@
+@import "../lib/colors";
+
+.intro {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 30vw;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.title {
+  font-size: 30pt;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 20pt;
+}
+
+.section-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: $lightbackground;
+}
+
+.sidebar-container {
+  position: sticky;
+  align-self: flex-start;
+  top: 0;
+  margin-left: 15px;
+  z-index: 10;
+  height: 100vh;
+}
+
+.section-title-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sidebar-section {
+  cursor: pointer;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  -webkit-transition:  all 1s cubic-bezier(0.21, 0.94, 0.64, 0.99);
+  -moz-transition:  all 1s cubic-bezier(0.21, 0.94, 0.64, 0.99);
+  transition: all 1s cubic-bezier(0.21, 0.94, 0.64, 0.99);
+}
+.sidebar-section.active {
+  /*font-weight: 800;*/
+  transform: scale(1.1);
+  color: $purple;
+}
