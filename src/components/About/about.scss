@@ -1,0 +1,28 @@
+#about {
+	justify-content: center;
+	padding-top: 200px;
+}
+
+.about-background-gradient {
+	position: absolute;
+	width: 100vw;
+	padding: 200px;
+	background: radial-gradient(307.00px at 49.47% 49.85%, #000AFD 0%, #9554FF 100%);
+	transform: rotate(172deg);
+}
+
+.about-dot {
+	position: absolute;
+	width: 47px;
+	height: 47px;
+	border-radius: 25px;
+	background: rgba(255, 255, 255, 0.1);
+}
+.about-dot2 {
+	right: 0;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	background: rgba(255, 255, 255, 0.1);
+}
