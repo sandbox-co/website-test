@@ -1,13 +1,21 @@
 import React from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { Parallax } from "react-scroll-parallax";
+import { Link } from "react-scroll";
 
 const ScrollIcon = () => (
-	<Parallax className={"bouncy-div"} offsetYMax={"75px"} offsetYMin={"-75px"} slowerScrollRate>
+	<Link
+		className={"bouncy-div"}
+		to="about-section"
+		spy={true}
+		smooth={true}
+		// offset={50}
+		duration={500}
+	>
 		<div className={"chevron"}>
 			<FaChevronDown />
 		</div>
-	</Parallax>
+	</Link>
 );
 
 export default ScrollIcon;

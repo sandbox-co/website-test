@@ -59,6 +59,11 @@
   color: white;
 }
 
+.caption {
+  margin-top: 12px;
+  font-size: 15pt;
+}
+
 .section-container {
   display: flex;
   width: 100vw;
@@ -115,6 +120,7 @@
 }
 
 .chevron {
+  cursor: pointer;
   transform: scaleX(2);
   color: white;
 }

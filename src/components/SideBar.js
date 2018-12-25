@@ -9,7 +9,7 @@ const SectionLink = ({ to, title }) => {
 			to={to}
 			spy={true}
 			smooth={true}
-			// offset={50}
+			// offset={-250}
 			duration={500}
 		>
 			{title}

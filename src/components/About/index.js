@@ -11,19 +11,46 @@ const About = props => {
 		<Element className="section-container" id="about" name="about-section">
 			<div className="about-gradient-container">
 				<div className="about-background-gradient">
-					<Parallax offsetYMax={"50px"} offsetYMin={"-50px"} slowerScrollRate>
+					<Parallax
+						offsetYMax={"50px"}
+						offsetYMin={"-50px"}
+						offsetXMax={"25px"}
+						offsetXMin={"-25px"}
+						slowerScrollRate
+					>
 						<div className="about-dot" />
 					</Parallax>
-					<Parallax offsetYMax={"75px"} offsetYMin={"-75px"}>
+					<Parallax
+						offsetYMax={"75px"}
+						offsetYMin={"-75px"}
+						offsetXMax={"50px"}
+						offsetXMin={"-50px"}
+					>
 						<div className="about-dot2" />
 					</Parallax>
-					<Parallax offsetYMax={"200px"} offsetYMin={"-100px"}>
+					<Parallax
+						offsetYMax={"200px"}
+						offsetYMin={"-100px"}
+						offsetXMax={"25px"}
+						offsetXMin={"-25px"}
+					>
 						<div className="about-dot3" />
 					</Parallax>
-					<Parallax offsetYMax={"100px"} offsetYMin={"-100px"} slowerScrollRate>
+					<Parallax
+						offsetYMax={"100px"}
+						offsetYMin={"-100px"}
+						offsetXMax={"75px"}
+						offsetXMin={"-75px"}
+						slowerScrollRate
+					>
 						<div className="about-dot4" />
 					</Parallax>
-					<Parallax offsetYMax={"100px"} offsetYMin={"-100px"}>
+					<Parallax
+						offsetYMax={"100px"}
+						offsetYMin={"-100px"}
+						offsetXMax={"25px"}
+						offsetXMin={"-25px"}
+					>
 						<div className="about-dot5" />
 					</Parallax>
 				</div>

@@ -4,6 +4,10 @@ import { Parallax } from "react-scroll-parallax";
 
 import "./learn.scss";
 
+import clouds from "./clouds.svg";
+import social_card from "./social_card.svg";
+import todo from "./todo.svg";
+
 const stack = [
 	{ title: "React", img: require("../../assets/logos/reactLogo.png") },
 	{ title: "Figma", img: require("../../assets/logos/figmaLogo.png") },
@@ -19,7 +23,7 @@ const Tech = ({ title, img, i }) => (
 	// <Parallax offsetYMin={`${50 * (i - 2)}px`} offsetYMax={`${-50 * (i - 2)}px`}>
 	<div className="tech-container">
 		<img className="logo" src={img} alt="loading" />
-		<div className="tech-name">{title}</div>
+		<div className="caption">{title}</div>
 	</div>
 	// </Parallax>
 );
@@ -32,13 +36,46 @@ const Learn = props => {
 					<div className="stack-layer1" />
 					<div className="stack-layer2" />
 				</div>
-				<div className="title">learn the stack used by the top tech companies</div>
+				<div className="subtitle">learn the stack used by the top tech companies</div>
 			</div>
-			<Parallax offsetYMin={"-300px"} offsetYMax={"400px"}>
+
+			<Parallax offsetYMin={"-300px"} offsetYMax={"300px"}>
 				<div className={"stack-container"}>
 					{stack.map((item, i) => (
-						<Tech i={i} {...item} />
+						<Tech key={i} i={i} {...item} />
 					))}
+				</div>
+			</Parallax>
+
+			<div className="learn-title-section">
+				<div className="project-icon-container">
+					<div className="project-icon-layer1" />
+					<div className="project-icon-layer2" />
+					<div className="project-icon-layer3" />
+				</div>
+				<div className="subtitle">with projects that are fun and experiential</div>
+			</div>
+
+			<Parallax offsetYMin={"-200px"} offsetYMax={"300px"}>
+				<div className="projects-container">
+					<div className="project-container">
+						<div className="project-background">
+							<img src={social_card} />
+						</div>
+						<div className="caption">Social Card</div>
+					</div>
+					<div className="project-container">
+						<div className="project-background center">
+							<img src={clouds} />
+						</div>
+						<div className="caption">Weather App</div>
+					</div>
+					<div className="project-container">
+						<div className="project-background center">
+							<img src={todo} />
+						</div>
+						<div className="caption">Todo App</div>
+					</div>
 				</div>
 			</Parallax>
 		</Element>

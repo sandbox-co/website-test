@@ -15,7 +15,6 @@
 .title-graphic-container {
 	position: relative;
 	width: 75px;
-	display: flex;
 }
 
 .stack-layer1 {
@@ -61,7 +60,75 @@
 	width: 100px;
 }
 
-.tech-name {
-	margin-top: 12px;
-	font-size: 15pt;
+.project-icon-container {
+	position: relative;
+	width: 75px;
+}
+
+.project-icon-layer1 {
+	width: 58px;
+	height: 58px;
+	background: linear-gradient(158.9deg, #000AFD 13.92%, #B517F5 145.42%);
+	border-radius: 7px;
+}
+
+.project-icon-layer2 {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	border-radius: 13px;
+	top: 0;
+	margin: 7px;
+	background: linear-gradient(0deg, #B517F5, #B517F5), #C4C4C4;
+	z-index: 1;
+}
+
+.project-icon-layer3 {
+	position: absolute;
+	width: 17px;
+	height: 17px;
+	bottom: 7px;
+	left: 27px;
+	margin: 7px;
+	background: linear-gradient(0deg, #0008B7, #0008B7), #C4C4C4;
+	border-radius: 2px;
+	z-index: 1;
+}
+
+.projects-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 50px;
+}
+
+.project-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 5px 20px 0 20px;
+}
+
+.project-background {
+	width: 120px;
+	height: 80px;
+	padding: 15px;
+	background: linear-gradient(147.98deg, #000AFD 13.9%, #B517F5 153.23%);
+	border-radius: 10px;
+}
+.project-background.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.project-dot-white {
+	position: absolute;
+	background-color: white;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	z-index: 1;
+	
 }
