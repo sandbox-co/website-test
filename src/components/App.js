@@ -10,12 +10,14 @@ import Learn from "./Learn";
 import Events from "./Events";
 import Partners from "./Partners";
 import People from "./People";
+import ScrollIcon from "./ScrollIcon";
 
 class App extends Component {
   render() {
     return (
       <ParallaxProvider>
         <Intro />
+        <ScrollIcon />
         <SideBar />
         <About />
         <Learn />
