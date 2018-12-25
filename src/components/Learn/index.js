@@ -15,22 +15,26 @@ const stack = [
 	{ title: "Stripe", img: require("../../assets/logos/stripeLogo.png") }
 ];
 
-const Tech = ({ title, img }) => (
+const Tech = ({ title, img, i }) => (
+	// <Parallax offsetYMin={`${50 * (i - 2)}px`} offsetYMax={`${-50 * (i - 2)}px`}>
 	<div className="tech-container">
 		<img className="logo" src={img} />
 		<div className="tech-name">{title}</div>
 	</div>
+	// </Parallax>
 );
 
 const Learn = props => {
 	return (
 		<Element className="section-container" id="learn" name="learn-section">
-			Learn
-			<div className={"stack-container"}>
-				{stack.map(item => (
-					<Tech {...item} />
-				))}
-			</div>
+			<div className="title section">learn the stack used by the top tech companies</div>
+			<Parallax offsetYMin={"-100px"} offsetYMax={"100px"}>
+				<div className={"stack-container"}>
+					{stack.map((item, i) => (
+						<Tech i={i} {...item} />
+					))}
+				</div>
+			</Parallax>
 		</Element>
 	);
 };
