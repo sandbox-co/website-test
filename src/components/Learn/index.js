@@ -39,7 +39,7 @@ const Learn = props => {
 				<div className="subtitle">learn the stack used by the top tech companies</div>
 			</div>
 
-			<Parallax offsetYMin={"-300px"} offsetYMax={"300px"}>
+			<Parallax offsetYMin={"-100px"} offsetYMax={"50px"}>
 				<div className={"stack-container"}>
 					{stack.map((item, i) => (
 						<Tech key={i} i={i} {...item} />
@@ -56,21 +56,30 @@ const Learn = props => {
 				<div className="subtitle">with projects that are fun and experiential</div>
 			</div>
 
-			<Parallax offsetYMin={"-200px"} offsetYMax={"300px"}>
+			<Parallax offsetYMin={"0px"} offsetYMax={"100px"}>
 				<div className="projects-container">
-					<div className="project-container">
+					<div
+						className="project-container"
+						onClick={() => window.open("https://github.com/sandbox-co/social-card")}
+					>
 						<div className="project-background">
 							<img src={social_card} />
 						</div>
 						<div className="caption">Social Card</div>
 					</div>
-					<div className="project-container">
+					<div
+						className="project-container"
+						onClick={() => window.open("https://github.com/sandbox-co/weather-app")}
+					>
 						<div className="project-background center">
 							<img src={clouds} />
 						</div>
 						<div className="caption">Weather App</div>
 					</div>
-					<div className="project-container">
+					<div
+						className="project-container"
+						onClick={() => window.open("https://github.com/sandbox-co/todo-starter")}
+					>
 						<div className="project-background center">
 							<img src={todo} />
 						</div>
