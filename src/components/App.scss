@@ -59,11 +59,11 @@
   transition: all 1s cubic-bezier(0.21, 0.94, 0.64, 0.99);
   &:hover {
     transform: scale(1.1);
-    color: $purple;
+    color: $blue;
   }
 }
 .sidebar-section.active {
   /*font-weight: 800;*/
   transform: scale(1.2);
-  color: $purple;
+  color: $blue;
 }

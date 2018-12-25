@@ -37,9 +37,13 @@ const About = props => {
 				</Parallax>
 			</div>
 			<div className="about-description">
-				<div className="title">Sandbox</div>- bridges the gap between Computer Science education and
-				technical entrepreneurship
-				<br />- empowers students to become founders
+				<div className="title">Sandbox</div>
+				<Parallax offsetXMax={"10px"} offsetXMin={"50px"}>
+					- bridges the gap between Computer Science education and technical entrepreneurship
+				</Parallax>
+				<Parallax offsetXMax={"10px"} offsetXMin={"50px"}>
+					- empowers students to become founders
+				</Parallax>
 			</div>
 		</Element>
 	);
