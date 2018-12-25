@@ -27,7 +27,13 @@ const Tech = ({ title, img, i }) => (
 const Learn = props => {
 	return (
 		<Element className="section-container" id="learn" name="learn-section">
-			<div className="title section">learn the stack used by the top tech companies</div>
+			<div className="learn-title-section">
+				<div className="title-graphic-container">
+					<div className="stack-layer1" />
+					<div className="stack-layer2" />
+				</div>
+				<div className="title">learn the stack used by the top tech companies</div>
+			</div>
 			<Parallax offsetYMin={"-100px"} offsetYMax={"100px"}>
 				<div className={"stack-container"}>
 					{stack.map((item, i) => (
