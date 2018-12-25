@@ -1,6 +1,5 @@
 import React from "react";
 import { FaChevronDown } from "react-icons/fa";
-import { Parallax } from "react-scroll-parallax";
 import { Link } from "react-scroll";
 
 const ScrollIcon = () => (

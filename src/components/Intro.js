@@ -1,7 +1,5 @@
 import React from "react";
 
-import ScrollIcon from "./ScrollIcon";
-
 const Intro = props => {
 	return (
 		<div className="intro">
