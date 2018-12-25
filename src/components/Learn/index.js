@@ -34,7 +34,7 @@ const Learn = props => {
 				</div>
 				<div className="title">learn the stack used by the top tech companies</div>
 			</div>
-			<Parallax offsetYMin={"-100px"} offsetYMax={"100px"}>
+			<Parallax offsetYMin={"-300px"} offsetYMax={"400px"}>
 				<div className={"stack-container"}>
 					{stack.map((item, i) => (
 						<Tech i={i} {...item} />
