@@ -10,19 +10,39 @@ import social_card from "./social_card.svg";
 import todo from "./todo.svg";
 
 const stack = [
-	{ title: "React", img: require("../../assets/logos/reactLogo.png") },
-	{ title: "Figma", img: require("../../assets/logos/figmaLogo.png") },
-	{ title: "AWS", img: require("../../assets/logos/amazonLogo.png") },
-	{ title: "Firebase", img: require("../../assets/logos/firebaseLogo.png") },
-	{ title: "Redux", img: require("../../assets/logos/reduxLogo.png") },
-	{ title: "Sentry", img: require("../../assets/logos/sentryLogo.png") },
-	{ title: "Slack", img: require("../../assets/logos/slackLogo.png") },
-	{ title: "Stripe", img: require("../../assets/logos/stripeLogo.png") }
+	{ title: "React", img: require("../../assets/logos/reactLogo.png"), url: "https://reactjs.org/" },
+	{
+		title: "Figma",
+		img: require("../../assets/logos/figmaLogo.png"),
+		url: "https://www.figma.com/"
+	},
+	{
+		title: "AWS",
+		img: require("../../assets/logos/amazonLogo.png"),
+		url: "https://aws.amazon.com/"
+	},
+	{
+		title: "Firebase",
+		img: require("../../assets/logos/firebaseLogo.png"),
+		url: "https://firebase.google.com/"
+	},
+	{
+		title: "Redux",
+		img: require("../../assets/logos/reduxLogo.png"),
+		url: "https://redux.js.org/"
+	},
+	{
+		title: "Sentry",
+		img: require("../../assets/logos/sentryLogo.png"),
+		url: "https://sentry.io/welcome/"
+	},
+	{ title: "Slack", img: require("../../assets/logos/slackLogo.png"), url: "https://slack.com/" },
+	{ title: "Stripe", img: require("../../assets/logos/stripeLogo.png"), url: "https://stripe.com/" }
 ];
 
-const Tech = ({ title, img, i }) => (
+const Tech = ({ title, url, img, i }) => (
 	// <Parallax offsetYMin={`${50 * (i - 2)}px`} offsetYMax={`${-50 * (i - 2)}px`}>
-	<div className="tech-container">
+	<div className="tech-container" onClick={() => window.open(url)}>
 		<img className="logo" src={img} alt="loading" />
 		<div className="caption space-top">{title}</div>
 	</div>
@@ -70,7 +90,7 @@ const Learn = props => {
 						className="project-container"
 						onClick={() => window.open("https://github.com/sandbox-co/social-card")}
 					>
-						<img className="project-background" src={social_card} />
+						<img className="project-background space-bottom" src={social_card} />
 						<div className="caption space-top">Social Card</div>
 					</div>
 					<div
