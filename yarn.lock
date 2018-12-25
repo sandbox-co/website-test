@@ -1006,11 +1006,6 @@
     "@svgr/core" "^2.4.1"
     loader-utils "^1.1.0"
 
-"@tweenjs/tween.js@16.7.0":
-  version "16.7.0"
-  resolved "https://registry.yarnpkg.com/@tweenjs/tween.js/-/tween.js-16.7.0.tgz#3ada9785f5bb2d92bb6313515f88102c2e47ddab"
-  integrity sha1-OtqXhfW7LZK7YxNRX4gQLC5H3as=
-
 "@types/tapable@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@types/tapable/-/tapable-1.0.2.tgz#e13182e1b69871a422d7863e11a4a6f5b814a4bd"
@@ -8312,25 +8307,10 @@ react-hot-loader@^4.6.3:
     shallowequal "^1.0.2"
     source-map "^0.7.3"
 
-react-inview-monitor@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/react-inview-monitor/-/react-inview-monitor-2.2.0.tgz#e80d8b2f82fdd8bbf42b18e4d1a0c9c6f3904825"
-  integrity sha512-paP2gRXbDu6hHx3gbOc0h6H0VX3K+ej8VzqOBV8CitMrwLMjSmynpGAb7j0ZlXxx5JTplQ060wKbcYwgV5FbmA==
-  dependencies:
-    prop-types "^15.6.1"
-    react "^16.2.0"
-
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
-
-react-mt-svg-lines@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/react-mt-svg-lines/-/react-mt-svg-lines-0.9.0.tgz#182e2bf418e4c248f155507986df00711149d14c"
-  integrity sha512-i0WCFeZ+LxKk0uxz/DjDoASzwF24iDQUuIWszUXds5ZA1U+3FXC7kVY6HcaYdBfmz6I1TmzYk38HJcL++/uXgA==
-  dependencies:
-    "@tweenjs/tween.js" "16.7.0"
 
 react-scripts@2.1.2:
   version "2.1.2"
@@ -8402,7 +8382,7 @@ react-scroll@^1.7.10:
     lodash.throttle "^4.1.1"
     prop-types "^15.5.8"
 
-react@^16.2.0, react@^16.7.0:
+react@^16.7.0:
   version "16.7.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.7.0.tgz#b674ec396b0a5715873b350446f7ea0802ab6381"
   integrity sha512-StCz3QY8lxTb5cl2HJxjwLFOXPIFQp+p+hxQfc8WE0QiLfCtIlKj8/+5tjjKm8uSTlAW+fCPaavGFS06V9Ar3A==

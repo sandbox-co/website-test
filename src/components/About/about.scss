@@ -1,6 +1,19 @@
 #about {
 	justify-content: center;
+	flex-direction: column;
 	/*padding-top: 50px;*/
+}
+
+.about-gradient-container {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	/*height: 100vh;*/
+}
+
+.about-description {
+	padding: 75px 0 0 75px;
+	font-size: 20pt;
 }
 
 .about-background-gradient {
@@ -9,7 +22,7 @@
 	width: 100vw;
 	padding: 250px;
 	background: radial-gradient(307.00px at 49.47% 49.85%, #000AFD 0%, #9554FF 100%);
-	transform: rotate(172deg);
+	transform: rotate(173deg);
 }
 
 .about-dot {
