@@ -1,5 +1,4 @@
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
 import { Link } from "react-scroll";
 
 const SectionLink = ({ to, title }) => {

@@ -17,6 +17,15 @@ const About = props => {
 					<Parallax offsetYMax={"75px"} offsetYMin={"-75px"}>
 						<div className="about-dot2" />
 					</Parallax>
+					<Parallax offsetYMax={"200px"} offsetYMin={"-100px"}>
+						<div className="about-dot3" />
+					</Parallax>
+					<Parallax offsetYMax={"100px"} offsetYMin={"-100px"} slowerScrollRate>
+						<div className="about-dot4" />
+					</Parallax>
+					<Parallax offsetYMax={"100px"} offsetYMin={"-100px"}>
+						<div className="about-dot5" />
+					</Parallax>
 				</div>
 				<Parallax
 					className="subtitle white"

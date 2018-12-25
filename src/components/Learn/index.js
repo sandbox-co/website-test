@@ -18,7 +18,7 @@ const stack = [
 const Tech = ({ title, img, i }) => (
 	// <Parallax offsetYMin={`${50 * (i - 2)}px`} offsetYMax={`${-50 * (i - 2)}px`}>
 	<div className="tech-container">
-		<img className="logo" src={img} />
+		<img className="logo" src={img} alt="loading" />
 		<div className="tech-name">{title}</div>
 	</div>
 	// </Parallax>
