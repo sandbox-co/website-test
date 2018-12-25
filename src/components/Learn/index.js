@@ -1,6 +1,7 @@
 import React from "react";
 import { Element } from "react-scroll";
 import { Parallax } from "react-scroll-parallax";
+import { FaArrowRight } from "react-icons/fa";
 
 import "./learn.scss";
 
@@ -69,31 +70,29 @@ const Learn = props => {
 						className="project-container"
 						onClick={() => window.open("https://github.com/sandbox-co/social-card")}
 					>
-						<div className="project-background">
-							<img src={social_card} />
-						</div>
+						<img className="project-background" src={social_card} />
 						<div className="caption space-top">Social Card</div>
 					</div>
 					<div
 						className="project-container"
 						onClick={() => window.open("https://github.com/sandbox-co/weather-app")}
 					>
-						<div className="project-background center">
-							<img src={clouds} />
-						</div>
+						<img className="project-background center" src={clouds} />
 						<div className="caption space-top">Weather App</div>
 					</div>
 					<div
 						className="project-container"
 						onClick={() => window.open("https://github.com/sandbox-co/todo-starter")}
 					>
-						<div className="project-background center">
-							<img src={todo} />
-						</div>
+						<img className="project-background center" src={todo} />
 						<div className="caption space-top">Todo App</div>
 					</div>
 				</div>
 			</Parallax>
+			<div className="learn-footer-container subtitle purple">
+				see the curriculum
+				<FaArrowRight />
+			</div>
 		</Element>
 	);
 };
