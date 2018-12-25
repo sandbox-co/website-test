@@ -1,3 +1,5 @@
+@import "../../lib/colors";
+
 #about {
 	justify-content: center;
 	flex-direction: column;
@@ -21,7 +23,7 @@
 	top: 90vh;
 	width: 100vw;
 	padding: 250px;
-	background: radial-gradient(307.00px at 49.47% 49.85%, #000AFD 0%, #9554FF 100%);
+	background: radial-gradient(507.00px at 49.47% 49.85%, $blue  10%, $purple 100%);
 	transform: rotate(173deg);
 }
 

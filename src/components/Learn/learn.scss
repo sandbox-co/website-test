@@ -1,3 +1,5 @@
+@import "../../lib/colors";
+
 #learn {
 	/*justify-content: center;*/
 	flex-direction: column;
@@ -21,7 +23,7 @@
 	width: 42.26px;
 	height: 42.26px;
 	margin: 10px 0 0 10px;
-	background: #B517F5;
+	background: $pink;
 	border-radius: 3px;
 }
 
@@ -29,7 +31,7 @@
 	position: absolute;
 	width: 42.26px;
 	height: 42.26px;
-	background: linear-gradient(323.35deg, #000AFD -25.95%, #B517F5 146.89%);
+	background: linear-gradient(323.35deg, $blue -25.95%, $purple 146.89%);
 	border-radius: 3px;
 }
 
