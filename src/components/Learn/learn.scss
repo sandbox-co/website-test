@@ -1,0 +1,26 @@
+
+.stack-container {
+	display: flex;
+	margin-top: 10vh;
+	flex-direction: row;
+	flex-wrap: wrap;
+	white-space: nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.tech-container {
+	display: flex;
+	margin: 0 75px 0 75px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo {
+	width: 100px;
+}
+
+.tech-name {
+	margin-top: 12px;
+	font-size: 15pt;
+}
