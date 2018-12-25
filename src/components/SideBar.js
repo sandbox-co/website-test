@@ -5,7 +5,7 @@ const SectionLink = ({ to, title }) => {
 	return (
 		<Link
 			className="sidebar-section"
-			activeClass="sidebar-section active"
+			activeClass={`sidebar-section ${title}`}
 			to={to}
 			spy={true}
 			smooth={true}

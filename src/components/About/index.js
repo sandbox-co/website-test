@@ -57,7 +57,7 @@ const About = props => {
 				<Parallax
 					className="subtitle white"
 					// offsetYMax={"-250px"}
-					offsetYMax={"250px"}
+					offsetYMax={"280px"}
 					offsetYMin={"-425px"}
 					slowerScrollRate
 				>

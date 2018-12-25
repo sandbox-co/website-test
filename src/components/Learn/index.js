@@ -23,7 +23,7 @@ const Tech = ({ title, img, i }) => (
 	// <Parallax offsetYMin={`${50 * (i - 2)}px`} offsetYMax={`${-50 * (i - 2)}px`}>
 	<div className="tech-container">
 		<img className="logo" src={img} alt="loading" />
-		<div className="caption">{title}</div>
+		<div className="caption space-top">{title}</div>
 	</div>
 	// </Parallax>
 );
@@ -31,6 +31,13 @@ const Tech = ({ title, img, i }) => (
 const Learn = props => {
 	return (
 		<Element className="section-container" id="learn" name="learn-section">
+			<div className="learn-title-container">
+				<div className="title section purple">
+					learn
+					<div className="caption">technical bootcamp for students</div>
+				</div>
+			</div>
+
 			<div className="learn-title-section">
 				<div className="title-graphic-container">
 					<div className="stack-layer1" />
@@ -65,7 +72,7 @@ const Learn = props => {
 						<div className="project-background">
 							<img src={social_card} />
 						</div>
-						<div className="caption">Social Card</div>
+						<div className="caption space-top">Social Card</div>
 					</div>
 					<div
 						className="project-container"
@@ -74,7 +81,7 @@ const Learn = props => {
 						<div className="project-background center">
 							<img src={clouds} />
 						</div>
-						<div className="caption">Weather App</div>
+						<div className="caption space-top">Weather App</div>
 					</div>
 					<div
 						className="project-container"
@@ -83,7 +90,7 @@ const Learn = props => {
 						<div className="project-background center">
 							<img src={todo} />
 						</div>
-						<div className="caption">Todo App</div>
+						<div className="caption space-top">Todo App</div>
 					</div>
 				</div>
 			</Parallax>

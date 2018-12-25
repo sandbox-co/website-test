@@ -51,6 +51,9 @@
 .title.section {
   padding-left: 75px;
 }
+.title.purple {
+  color: $purple;
+}
 
 .subtitle {
   font-size: 24pt;
@@ -60,11 +63,14 @@
 }
 
 .caption {
-  margin-top: 12px;
   font-size: 15pt;
+  color: black;
 }
 .caption.gray {
   color: rgba(255, 255, 255, 0.7);
+}
+.caption.space-top {
+  margin-top: 12px;
 }
 
 .section-container {
@@ -108,10 +114,28 @@
     color: $blue;
   }
 }
-.sidebar-section.active {
+.sidebar-section.ABOUT {
+  transform: scale(1.2);
+  color: white;
+}
+.sidebar-section.LEARN {
+  transform: scale(1.2);
+  color: blue;
+}
+.sidebar-section.EVENTS {
   /*font-weight: 800;*/
   transform: scale(1.2);
-  color: $blue;
+  color: white;
+}
+.sidebar-section.PARTNERS {
+  /*font-weight: 800;*/
+  transform: scale(1.2);
+  color: blue;
+}
+.sidebar-section.PEOPLE {
+  /*font-weight: 800;*/
+  transform: scale(1.2);
+  color: white;
 }
 
 .bouncy-div {

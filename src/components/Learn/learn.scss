@@ -3,14 +3,18 @@
 #learn {
 	/*justify-content: center;*/
 	flex-direction: column;
-	padding-top: 75px;
-	padding-bottom: 70px;
+	padding-top: 40px;
+	padding-bottom: 65px;
 }
 
 .learn-title-section {
 	padding-left: 75px;
 	display: flex;
 	flex-direction: row;
+}
+
+.learn-title-container {
+	margin-bottom: 30px;
 }
 
 .title-graphic-container {
