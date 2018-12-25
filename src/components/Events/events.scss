@@ -1,0 +1,26 @@
+.events-gradient-container {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	padding-top: 200px;
+	margin-bottom: 400px;
+	height: 100vh;
+}
+
+.events-background {
+	position: absolute;
+	margin-top: 100px;
+	width: 140vw;
+	padding: 1000px 0 100px 0;
+	background: radial-gradient(1623.50px at 50.01% 49.99%, #000AFD 0%, #B517F5 100%);
+	transform: rotate(6.21deg);
+}
+
+.events-content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 350px 0 0 75px;
+  position: absolute;
+  z-index: 10;
+}

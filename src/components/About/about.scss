@@ -1,6 +1,7 @@
 @import "../../lib/colors";
 
 #about {
+	margin-top: 100vh;
 	justify-content: center;
 	flex-direction: column;
 	/*padding-top: 50px;*/
@@ -10,11 +11,12 @@
 	display: flex;
 	justify-content: center;
 	width: 100vw;
+	margin-bottom: 400px;
 	/*height: 100vh;*/
 }
 
 .about-description {
-	padding: 75px 0 0 75px;
+	padding: 75px 0 75px 75px;
 	font-size: 20pt;
 }
 
@@ -27,44 +29,3 @@
 	transform: rotate(173deg);
 }
 
-/* DOTS */
-.about-dot {
-	position: absolute;
-	width: 47px;
-	height: 47px;
-	border-radius: 25px;
-	background: rgba(255, 255, 255, 0.1);
-}
-.about-dot2 {
-	right: 0;
-	position: absolute;
-	width: 60px;
-	height: 60px;
-	border-radius: 30px;
-	background: rgba(255, 255, 255, 0.1);
-}
-.about-dot3 {
-	right: 0;
-	margin: 50px 200px 0 0;
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	border-radius: 15px;
-	background: rgba(255, 255, 255, 0.1);
-}
-.about-dot4 {
-	margin: 70px 0 0 200px;
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	border-radius: 15px;
-	background: rgba(255, 255, 255, 0.1);
-}
-.about-dot5 {
-	margin: 70px 0 0 300px;
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	border-radius: 25px;
-	background: rgba(255, 255, 255, 0.1);
-}

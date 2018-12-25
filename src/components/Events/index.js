@@ -2,15 +2,13 @@ import React from "react";
 import { Element } from "react-scroll";
 import { Parallax } from "react-scroll-parallax";
 
-import "./about.scss";
+import "./events.scss";
 
-// import AnimatedSVG from "../universal/AnimatedSVG";
-
-const About = props => {
+const Events = props => {
 	return (
-		<Element className="section-container" id="about" name="about-section">
-			<div className="about-gradient-container">
-				<div className="about-background-gradient">
+		<Element className="section-container" name="events-section">
+			<div className="events-gradient-container">
+				<div className="events-background">
 					<Parallax
 						offsetYMax={"50px"}
 						offsetYMin={"-50px"}
@@ -54,27 +52,13 @@ const About = props => {
 						<div className="dot5" />
 					</Parallax>
 				</div>
-				<Parallax
-					className="subtitle white"
-					// offsetYMax={"-250px"}
-					offsetYMax={"250px"}
-					offsetYMin={"-425px"}
-					slowerScrollRate
-				>
-					we turn creative students into technical superstars
-				</Parallax>
 			</div>
-			<div className="about-description">
-				<div className="title">Sandbox</div>
-				<Parallax offsetXMax={"10px"} offsetXMin={"50px"}>
-					- bridges the gap between Computer Science education and technical entrepreneurship
-				</Parallax>
-				<Parallax offsetXMax={"10px"} offsetXMin={"50px"}>
-					- empowers students to become founders
-				</Parallax>
+			<div className="events-content-container">
+				<div className="subtitle white">sandbox events</div>
+				<div className="caption gray">we host hackathons and awesome guest speakers</div>
 			</div>
 		</Element>
 	);
 };
 
-export default About;
+export default Events;

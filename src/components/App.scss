@@ -63,17 +63,25 @@
   margin-top: 12px;
   font-size: 15pt;
 }
+.caption.gray {
+  color: rgba(255, 255, 255, 0.7);
+}
 
 .section-container {
   display: flex;
   width: 100vw;
-  height: 100vh;
+  /*height: 100vh;*/
   z-index: 1;
   background-color: white;
 }
+.section-container.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .sidebar-container {
-  position: sticky;
+  position: fixed;
   align-self: flex-start;
   top: 0;
   margin-left: 15px;
@@ -123,4 +131,46 @@
   cursor: pointer;
   transform: scaleX(2);
   color: white;
+}
+
+/* DOTS */
+.dot {
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.dot2 {
+  right: 0;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.dot3 {
+  right: 0;
+  margin: 50px 200px 0 0;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.dot4 {
+  margin: 70px 0 0 200px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.dot5 {
+  margin: 70px 0 0 300px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
 }
