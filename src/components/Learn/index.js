@@ -37,7 +37,21 @@ const stack = [
 		url: "https://sentry.io/welcome/"
 	},
 	{ title: "Slack", img: require("../../assets/logos/slackLogo.png"), url: "https://slack.com/" },
-	{ title: "Stripe", img: require("../../assets/logos/stripeLogo.png"), url: "https://stripe.com/" }
+	{
+		title: "Stripe",
+		img: require("../../assets/logos/stripeLogo.png"),
+		url: "https://stripe.com/"
+	},
+	{
+		title: "mongoDB",
+		img: require("../../assets/logos/mongoLogo.png"),
+		url: "https://www.mongodb.com/"
+	},
+	{
+		title: "NodeJS",
+		img: require("../../assets/logos/nodeLogo.png"),
+		url: "https://nodejs.org/en/"
+	}
 ];
 
 const Tech = ({ title, url, img, i }) => (

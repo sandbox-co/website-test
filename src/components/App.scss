@@ -160,6 +160,20 @@
   color: white;
 }
 
+.footer-container {
+  width: 100vw;
+}
+
+.footer-gradient {
+  position: absolute;
+  width: 1440px;
+  height: 729px;
+  left: 0px;
+  top: 8748px;
+
+  background: linear-gradient(180deg, #000AFD -11.61%, #B517F5 129.64%);
+}
+
 /* DOTS */
 .dot {
   position: absolute;

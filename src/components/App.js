@@ -10,6 +10,7 @@ import Learn from "./Learn";
 import Events from "./Events";
 import Partners from "./Partners";
 import People from "./People";
+import Footer from "./Footer";
 import ScrollIcon from "./ScrollIcon";
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
         <Events />
         <Partners />
         <People />
+        <Footer />
       </ParallaxProvider>
     );
   }
