@@ -14,7 +14,32 @@ import Footer from "./Footer";
 import ScrollIcon from "./ScrollIcon";
 
 class App extends Component {
+  state = {
+    screen: {
+      width: window.innerWidth,
+      height: window.innerHeight
+    }
+  };
+
+  componentDidMount() {
+    window.addEventListener("resize", this.onResize);
+    this.onResize();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.onResize);
+  }
+
+  onResize = () => {
+    this.setState({
+      screen: {
+        width: window.innerWidth,
+        height: window.innerHeight
+      }
+    });
+  };
   render() {
+    const { width, height } = this.state.screen;
     return (
       <ParallaxProvider>
         <Intro />
@@ -25,7 +50,7 @@ class App extends Component {
         <Events />
         <Partners />
         <People />
-        <Footer />
+        <Footer width={width} height={height} />
       </ParallaxProvider>
     );
   }
