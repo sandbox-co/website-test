@@ -1,18 +1,25 @@
-<svg width="108" height="69" viewBox="0 0 108 69" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="30" y="5" width="78" height="8.92194" rx="4.45537" fill="white"/>
-<ellipse cx="10" cy="9.5" rx="10" ry="9.5" fill="white"/>
-<rect width="6.18848" height="1.95315" rx="0.976573" transform="matrix(0.774803 0.632203 -0.649051 0.760745 5.83887 8.38257)" fill="#000AFD"/>
-<rect width="9.50084" height="1.95785" rx="0.978925" transform="matrix(-0.702139 0.71204 -0.727512 -0.686095 16.0022 6.99023)" fill="#000AFD"/>
-<rect opacity="0.5" x="30" y="30.0391" width="78" height="8.92194" rx="4.45537" fill="white"/>
+<svg width="154" height="113" viewBox="0 0 154 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.456543" width="152.919" height="112.275" rx="10" fill="url(#paint0_linear)"/>
+<rect x="53" y="26" width="78" height="8.92194" rx="4.45537" fill="white"/>
+<ellipse cx="33" cy="30.5" rx="10" ry="9.5" fill="white"/>
+<rect width="6.18848" height="1.95315" rx="0.976573" transform="matrix(0.774803 0.632203 -0.649051 0.760745 28.8389 29.3826)" fill="#000AFD"/>
+<rect width="9.50084" height="1.95785" rx="0.978925" transform="matrix(-0.702139 0.71204 -0.727512 -0.686095 39.0022 27.9902)" fill="#000AFD"/>
+<rect opacity="0.5" x="53" y="51.0391" width="78" height="8.92194" rx="4.45537" fill="white"/>
 <g opacity="0.5">
-<ellipse cx="10" cy="34.5" rx="10" ry="9.5" fill="white"/>
-<rect width="6.18848" height="1.95315" rx="0.976573" transform="matrix(0.774803 0.632203 -0.649051 0.760745 5.83887 33.3826)" fill="#000AFD"/>
-<rect width="9.50084" height="1.95785" rx="0.978925" transform="matrix(-0.702139 0.71204 -0.727512 -0.686095 16.0022 31.9902)" fill="#000AFD"/>
+<ellipse cx="33" cy="55.5" rx="10" ry="9.5" fill="white"/>
+<rect width="6.18848" height="1.95315" rx="0.976573" transform="matrix(0.774803 0.632203 -0.649051 0.760745 28.8389 54.3826)" fill="#000AFD"/>
+<rect width="9.50084" height="1.95785" rx="0.978925" transform="matrix(-0.702139 0.71204 -0.727512 -0.686095 39.0022 52.9902)" fill="#000AFD"/>
 </g>
-<rect opacity="0.5" x="30" y="55.0781" width="78" height="8.92194" rx="4.45537" fill="white"/>
+<rect opacity="0.5" x="53" y="76.0781" width="78" height="8.92194" rx="4.45537" fill="white"/>
 <g opacity="0.5">
-<ellipse cx="10" cy="59.5" rx="10" ry="9.5" fill="white"/>
-<rect width="6.18848" height="1.95315" rx="0.976573" transform="matrix(0.774803 0.632203 -0.649051 0.760745 5.83887 58.3826)" fill="#000AFD"/>
-<rect width="9.50084" height="1.95785" rx="0.978925" transform="matrix(-0.702139 0.71204 -0.727512 -0.686095 16.0022 56.9902)" fill="#000AFD"/>
+<ellipse cx="33" cy="80.5" rx="10" ry="9.5" fill="white"/>
+<rect width="6.18848" height="1.95315" rx="0.976573" transform="matrix(0.774803 0.632203 -0.649051 0.760745 28.8389 79.3826)" fill="#000AFD"/>
+<rect width="9.50084" height="1.95785" rx="0.978925" transform="matrix(-0.702139 0.71204 -0.727512 -0.686095 39.0022 77.9902)" fill="#000AFD"/>
 </g>
+<defs>
+<linearGradient id="paint0_linear" x1="60.9128" y1="-8.91073" x2="191.138" y2="199.336" gradientUnits="userSpaceOnUse">
+<stop stop-color="#000AFD"/>
+<stop offset="1" stop-color="#B517F5"/>
+</linearGradient>
+</defs>
 </svg>
