@@ -45,7 +45,7 @@ class App extends Component {
         <Intro />
         <ScrollIcon />
         <SideBar />
-        <About />
+        <About width={width} height={height} />
         <Learn />
         <Events />
         <Partners />

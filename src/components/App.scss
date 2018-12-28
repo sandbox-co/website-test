@@ -58,6 +58,12 @@
 .subtitle {
   font-size: 24pt;
 }
+.subtitle.absolute {
+  position: absolute;
+}
+.subtitle.center {
+  align-self: center;
+}
 .subtitle.white {
   color: white;
 }
@@ -119,7 +125,7 @@
 }
 .sidebar-section.ABOUT {
   transform: scale(1.2);
-  color: white;
+  color: blue;
 }
 .sidebar-section.LEARN {
   transform: scale(1.2);
@@ -145,7 +151,7 @@
   animation: bounceInUp; 
   animation-duration: 1.5s;
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -162,18 +168,20 @@
 
 .footer-container {
   width: 100vw;
+  height: 520px;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-end;
   background-color: white;
   z-index: 2;
 }
 
-.footer-gradient {
+.footer-gradient-container {
+  width: 100vw;
+  height: 520px;
   position: absolute;
-  width: 1440px;
-  height: 729px;
-  left: 0px;
-  top: 8748px;
-
-  background: linear-gradient(180deg, #000AFD -11.61%, #B517F5 129.64%);
+  display: flex;
+  align-items: flex-end;
 }
 
 /* DOTS */
