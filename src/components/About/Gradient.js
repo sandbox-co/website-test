@@ -1,5 +1,4 @@
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
 
 const Gradient = ({ width, height }) => (
 	<span className="gradient-container">
