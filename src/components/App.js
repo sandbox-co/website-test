@@ -47,7 +47,7 @@ class App extends Component {
         <SideBar />
         <About width={width} height={height} />
         <Learn />
-        <Events />
+        <Events width={width} height={height} />
         <Partners />
         <People />
         <Footer width={width} height={height} />

@@ -5,24 +5,23 @@ const Gradient = ({ width, height }) => (
 	<span className="gradient-container">
 		<svg
 			width={width}
-			height="650"
-			viewBox={`0 0 ${width} 650`}
+			height="1750"
+			viewBox={`0 0 ${width} 1750`}
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
-			<path d={`M0 650 H${width} V200 Z`} fill="white" />
-			<path d={`M0 200 V650 L${width} 450 V0 Z`} fill="url(#paint0_radial)" />
+			<path d={`M0 0 L${width} 200 V1750 L0 1550 Z`} fill="url(#learn-radial)" />
 			<defs>
 				<radialGradient
-					id="paint0_radial"
+					id="learn-radial"
 					cx="0"
 					cy="0"
 					r="1"
 					gradientUnits="userSpaceOnUse"
-					gradientTransform="translate(727.308 323.288) rotate(-97.7837) scale(307.002 1560.83)"
+					gradientTransform="translate(720.586 883.801) rotate(-90) scale(1623.5 3416.95)"
 				>
 					<stop stop-color="#000AFD" />
-					<stop offset="1" stop-color="#9554FF" />
+					<stop offset="1" stop-color="#B517F5" />
 				</radialGradient>
 			</defs>
 		</svg>
@@ -30,3 +29,4 @@ const Gradient = ({ width, height }) => (
 );
 
 export default Gradient;
+
