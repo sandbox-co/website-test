@@ -16,7 +16,7 @@ const About = ({ width, height }) => (
 		<Parallax
 			className="subtitle white center absolute"
 			offsetYMax={"0px"}
-			offsetYMin={"-510px"}
+			offsetYMin={"-610px"}
 			slowerScrollRate
 		>
 			we turn creative students into technical superstars
