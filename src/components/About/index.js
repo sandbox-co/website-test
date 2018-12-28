@@ -4,6 +4,7 @@ import { Parallax } from "react-scroll-parallax";
 
 import "./about.scss";
 
+// import Section from "../universal/Section";
 import Gradient from "./Gradient";
 import Dots from "./Dots";
 
@@ -13,12 +14,7 @@ const About = ({ width, height }) => (
 	<Element className="section-container" id="about" name="about-section">
 		<Gradient width={width} height={height} />
 		<Dots width={width} height={height} />
-		<Parallax
-			className="subtitle white center absolute"
-			offsetYMax={"0px"}
-			offsetYMin={"-610px"}
-			slowerScrollRate
-		>
+		<Parallax className="catch-phrase" offsetYMax={"0px"} offsetYMin={"-610px"} slowerScrollRate>
 			we turn creative students into technical superstars
 		</Parallax>
 		<div className="about-description">

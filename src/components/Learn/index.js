@@ -5,6 +5,8 @@ import { FaArrowRight } from "react-icons/fa";
 
 import "./learn.scss";
 
+import Header from "../universal/Header";
+
 import clouds from "./clouds.svg";
 import social_card from "./social_card.svg";
 import todo from "./todo.svg";
@@ -14,6 +16,11 @@ import projects_icon from "./projects_icon.svg";
 
 const stack = [
 	{ title: "React", img: require("../../assets/logos/reactLogo.png"), url: "https://reactjs.org/" },
+	{
+		title: "Redux",
+		img: require("../../assets/logos/reduxLogo.png"),
+		url: "https://redux.js.org/"
+	},
 	{
 		title: "Figma",
 		img: require("../../assets/logos/figmaLogo.png"),
@@ -29,11 +36,7 @@ const stack = [
 		img: require("../../assets/logos/firebaseLogo.png"),
 		url: "https://firebase.google.com/"
 	},
-	{
-		title: "Redux",
-		img: require("../../assets/logos/reduxLogo.png"),
-		url: "https://redux.js.org/"
-	},
+
 	{
 		title: "Sentry",
 		img: require("../../assets/logos/sentryLogo.png"),
@@ -67,13 +70,14 @@ const Tech = ({ title, url, img, i }) => (
 );
 
 const Learn = props => (
-	<Element className="section-container" id="learn" name="learn-section">
-		<div className="learn-title-container">
-			<div className="title section purple">
-				learn
-				<div className="caption">technical bootcamp for students</div>
-			</div>
-		</div>
+	<Element className="section-container" name="learn-section">
+		<Header title="sandbox learn" subtitle="techincal bootcamp for students" />
+		{/*<div className="learn-title-container">
+					<div className="title section purple">
+						learn
+						<div className="caption">technical bootcamp for students</div>
+					</div>
+				</div>*/}
 
 		<div className="learn-title-section">
 			<img className="learn-icon-container" src={learn_icon} />

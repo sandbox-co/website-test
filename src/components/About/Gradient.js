@@ -11,10 +11,10 @@ const Gradient = ({ width, height }) => (
 			xmlns="http://www.w3.org/2000/svg"
 		>
 			<path d={`M0 650 H${width} V200 Z`} fill="white" />
-			<path d={`M0 200 V650 L${width} 450 V0 Z`} fill="url(#paint0_radial)" />
+			<path d={`M0 200 V650 L${width} 450 V0 Z`} fill="url(#about_radial)" />
 			<defs>
 				<radialGradient
-					id="paint0_radial"
+					id="about_radial"
 					cx="0"
 					cy="0"
 					r="1"

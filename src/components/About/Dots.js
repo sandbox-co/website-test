@@ -43,6 +43,25 @@ const Dots = ({ width, height }) => (
 		</Parallax>
 		<Parallax
 			className="dot"
+			offsetYMax={"300px"}
+			offsetYMin={"-50px"}
+			offsetXMax={"40px"}
+			offsetXMin={"-25px"}
+			slowerScrollRate
+		>
+			<svg
+				width={width}
+				height="650"
+				viewBox={`0 0 ${width} 650`}
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<circle cx={300} cy="300" r="10" fill="white" fillOpacity="0.1" />
+				<circle cx="50" cy="400" r="25" fill="white" fillOpacity="0.1" />
+			</svg>
+		</Parallax>
+		<Parallax
+			className="dot"
 			offsetYMax={"50px"}
 			offsetYMin={"-50px"}
 			offsetXMax={"25px"}
