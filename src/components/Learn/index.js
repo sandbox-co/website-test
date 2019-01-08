@@ -71,7 +71,7 @@ const Tech = ({ title, url, img, i }) => (
 
 const Learn = props => (
 	<Element className="section-container" name="learn-section">
-		<Header title="sandbox learn" subtitle="techincal bootcamp for students" />
+		<Header title="sandbox learn" subtitle="technical bootcamp for students" />
 		{/*<div className="learn-title-container">
 					<div className="title section purple">
 						learn
@@ -84,7 +84,7 @@ const Learn = props => (
 			<div className="subtitle">learn the stack used by the top tech companies</div>
 		</div>
 
-		<Parallax offsetYMin={"-100px"} offsetYMax={"50px"}>
+		<Parallax offsetYMin={"0px"} offsetYMax={"50px"}>
 			<div className={"stack-container"}>
 				{stack.map((item, i) => (
 					<Tech key={i} i={i} {...item} />
@@ -97,7 +97,7 @@ const Learn = props => (
 			<div className="subtitle">with projects that are fun and experiential</div>
 		</div>
 
-		<Parallax offsetYMin={"0px"} offsetYMax={"100px"}>
+		<Parallax offsetYMin={"0px"} offsetYMax={"50px"}>
 			<div className="projects-container">
 				<div
 					className="project-container"
@@ -122,9 +122,10 @@ const Learn = props => (
 				</div>
 			</div>
 		</Parallax>
-		<div className="learn-footer-container subtitle purple">
+
+		<div className="action">
 			see the curriculum
-			<FaArrowRight />
+			<img src={require("../../assets/learnArrow.png")} className="action-arrow"/>
 		</div>
 	</Element>
 );

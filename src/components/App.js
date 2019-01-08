@@ -45,7 +45,7 @@ class App extends Component {
       <ParallaxProvider>
         <Intro />
         <ScrollIcon />
-        <SideBar />
+        {/*<SideBar />*/}
         <About width={width} height={height} />
         <Learn />
         <Events width={width} height={height} />

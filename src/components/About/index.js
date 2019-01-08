@@ -14,18 +14,9 @@ const About = ({ width, height }) => (
 	<Element className="section-container" id="about" name="about-section">
 		<Gradient width={width} height={height} />
 		<Dots width={width} height={height} />
-		<Parallax className="catch-phrase" offsetYMax={"0px"} offsetYMin={"-610px"} slowerScrollRate>
+		<Parallax className="catch-phrase" offsetYMax={"100px"} offsetYMin={"-400px"} slowerScrollRate>
 			we turn creative students into technical superstars
 		</Parallax>
-		<div className="about-description">
-			<div className="title">Sandbox</div>
-			<Parallax offsetXMax={"10px"} offsetXMin={"50px"}>
-				- bridges the gap between Computer Science education and technical entrepreneurship
-			</Parallax>
-			<Parallax offsetXMax={"10px"} offsetXMin={"50px"}>
-				- empowers students to become founders
-			</Parallax>
-		</div>
 	</Element>
 );
 
