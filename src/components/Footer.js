@@ -35,7 +35,7 @@ const Footer = ({ width }) => {
 					</defs>
 					<path
 						d={`M0 ${line} L${width} 0 V${
-							width <= 800 ? MOBILE_HEIGHT : DESKTOP_HEIGHT
+							width <= 950 ? MOBILE_HEIGHT : DESKTOP_HEIGHT
 						} H0 V170 Z`}
 						fill="url(#paint0_linear)"
 					/>
@@ -75,7 +75,7 @@ const Footer = ({ width }) => {
 					width={width}
 					height={width <= 950 ? 800 : 520}
 					viewBox={`0 0 ${width} ${
-						width <= 800 ? MOBILE_HEIGHT : DESKTOP_HEIGHT
+						width <= 950 ? MOBILE_HEIGHT : DESKTOP_HEIGHT
 					}`}
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
