@@ -1,0 +1,16 @@
+<svg width="36" height="62" viewBox="0 0 36 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="14.0488" height="33.0667" rx="7.02439" transform="matrix(-1 0 0 1 36 28.9331)" fill="url(#paint0_linear)"/>
+<rect width="14.0488" height="43.4" rx="7.02439" transform="matrix(-1 0 0 1 14.0488 18.6001)" fill="url(#paint1_linear)"/>
+<ellipse opacity="0.8" rx="7.02439" ry="7.08571" transform="matrix(-1 0 0 1 7.02444 7.08571)" fill="#B517F5"/>
+<ellipse opacity="0.8" rx="7.02439" ry="7.08571" transform="matrix(-1 0 0 1 28.9756 17.7144)" fill="#B517F5"/>
+<defs>
+<linearGradient id="paint0_linear" x1="7.02439" y1="0" x2="34.0217" y2="24.1693" gradientUnits="userSpaceOnUse">
+<stop stop-color="#000AFD"/>
+<stop offset="1" stop-color="#B517F5"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="7.02439" y1="0" x2="40.2165" y2="22.6401" gradientUnits="userSpaceOnUse">
+<stop stop-color="#000AFD"/>
+<stop offset="1" stop-color="#B517F5"/>
+</linearGradient>
+</defs>
+</svg>
