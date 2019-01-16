@@ -81,9 +81,9 @@ const Learn = props => (
 	<Element className="section-container" name="learn-section">
 		<Header title="sandbox learn" subtitle="technical bootcamp for students" />
 
-		<div className="learn-title-section">
-			<img className="learn-icon-container" src={learn_icon} />
-			<div className="learn-subtitle">
+		<div className="subsection-wrapper">
+			<img className="subsection-icon" src={learn_icon} />
+			<div className="subsection-subtitle">
 				learn the stack used by the top tech companies
 			</div>
 		</div>
@@ -96,9 +96,9 @@ const Learn = props => (
 			</div>
 		</Parallax>
 
-		<div className="learn-title-section">
-			<img className="learn-icon-container" src={projects_icon} />
-			<div className="learn-subtitle">
+		<div className="subsection-wrapper">
+			<img className="subsection-icon" src={projects_icon} />
+			<div className="subsection-subtitle">
 				with projects that are fun and experiential
 			</div>
 		</div>

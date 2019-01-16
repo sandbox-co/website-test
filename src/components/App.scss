@@ -75,7 +75,7 @@
   font-weight: 600;
   padding-left: 50px;
   @media (max-width: 800px) {
-    padding-left: 20px;
+    padding-left: 25px;
     font-size: 30pt;
   }
 }
@@ -97,8 +97,10 @@
   font-weight: 500;
   /*font-weight: bold;*/
   padding-left: 50px;
+  padding-right: 50px;
   @media (max-width: 800px) {
-    padding-left: 20px;
+    padding-left: 25px;
+    padding-left: 25px;
     font-size: 16pt;
   }
 }
@@ -128,6 +130,31 @@
   margin: 0;
 }
 
+.subsection-wrapper {
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  @media (max-width: 800px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.subsection-icon {
+  margin-right: 30px;
+  width: 30px;
+}
+
+.subsection-subtitle {
+  font-size: 18pt;
+  font-weight: 500;
+  /*font-weight: bold;*/
+  @media (max-width: 800px) {
+    font-size: 16pt;
+  }
+}
+
 .section-container {
   display: flex;
   flex-direction: column;
@@ -145,10 +172,12 @@
 .section-title-container {
   display: flex;
   flex-direction: column;
-  margin: 50px 0px 50px 50px;
+  padding: 50px 0px 50px 50px;
   @media (max-width: 800px) {
-    margin: 50px 0px 50px 25px;
+    padding: 50px 0px 50px 25px;
   }
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 .section-title {
@@ -247,7 +276,7 @@
   background-color: white;
   z-index: 2;
   position: relative;
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
     height: 700px;
   }
 }
@@ -282,7 +311,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
     flex-direction: column-reverse;
   }
   flex-wrap: wrap;
@@ -298,7 +327,7 @@
   font-weight: 600;
   padding-top: 20px;
   width: 250px;
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
     align-items: center;
     text-align: center;
   }
@@ -326,7 +355,7 @@
   align-items: flex-end;
   padding-top: 20px;
   width: 250px;
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
     align-items: center;
   }
 }
@@ -353,6 +382,9 @@
   font-size: 24px;
   font-weight: 600;
   margin-right: 15px;
+  @media (max-width: 950px) {
+    // font-size: 20px;
+  }
 }
 
 .footer-link-image {
@@ -366,7 +398,7 @@
   position: absolute;
   display: flex;
   align-items: flex-end;
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
     height: 700px;
   }
 }

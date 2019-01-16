@@ -7,31 +7,6 @@
 	/*padding-bottom: 0px;*/
 }
 
-.learn-title-section {
-	padding-left: 50px;
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	@media (max-width: 800px) {
-		padding-left: 25px;
-		padding-right: 25px;
-	}
-}
-
-.learn-icon-container {
-	margin-right: 30px;
-	width: 30px;
-}
-
-.learn-subtitle {
-	font-size: 18pt;
-	font-weight: 500;
-	/*font-weight: bold;*/
-	@media (max-width: 800px) {
-		font-size: 16pt;
-	}
-}
-
 .stack-container {
 	display: flex;
 	padding-top: 50px;
