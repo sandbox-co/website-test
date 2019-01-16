@@ -1,15 +1,19 @@
 import React from "react";
 import { Parallax } from "react-scroll-parallax";
-import EmailEntry from "./universal/EmailEntry"
+import EmailEntry from "./universal/EmailEntry";
+
+const MOBILE_HEIGHT = 700;
+const DESKTOP_HEIGHT = 520;
 
 const Footer = ({ width }) => (
 	<div className="footer-container">
-
 		<span className="footer-gradient-container">
 			<svg
 				width={width}
-				height="520"
-				viewBox={`0 0 ${width} 520`}
+				height={width <= 800 ? MOBILE_HEIGHT : DESKTOP_HEIGHT}
+				viewBox={`0 0 ${width} ${
+					width <= 800 ? MOBILE_HEIGHT : DESKTOP_HEIGHT
+				}`}
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
 			>
@@ -26,7 +30,12 @@ const Footer = ({ width }) => (
 						<stop offset="1" stopColor="#B517F5" />
 					</linearGradient>
 				</defs>
-				<path d={`M0 170 L${width} 0 V520 H0 V170 Z`} fill="url(#paint0_linear)" />
+				<path
+					d={`M0 170 L${width} 0 V${
+						width <= 800 ? MOBILE_HEIGHT : DESKTOP_HEIGHT
+					} H0 V170 Z`}
+					fill="url(#paint0_linear)"
+				/>
 			</svg>
 		</span>
 		<Parallax
@@ -43,7 +52,13 @@ const Footer = ({ width }) => (
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
 			>
-				<circle cx="25.0864" cy="25.3015" r="24.5" fill="white" fillOpacity="0.1" />
+				<circle
+					cx="25.0864"
+					cy="25.3015"
+					r="24.5"
+					fill="white"
+					fillOpacity="0.1"
+				/>
 			</svg>
 		</Parallax>
 		<Parallax
@@ -55,12 +70,20 @@ const Footer = ({ width }) => (
 		>
 			<svg
 				width={width}
-				height="520"
-				viewBox={`0 0 ${width} 520`}
+				height={width <= 800 ? 800 : 520}
+				viewBox={`0 0 ${width} ${
+					width <= 800 ? MOBILE_HEIGHT : DESKTOP_HEIGHT
+				}`}
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
 			>
-				<circle cx={width / 2} cy="250" r="12.5" fill="white" fillOpacity="0.1" />
+				<circle
+					cx={width / 2}
+					cy="250"
+					r="12.5"
+					fill="white"
+					fillOpacity="0.1"
+				/>
 			</svg>
 		</Parallax>
 
@@ -68,31 +91,49 @@ const Footer = ({ width }) => (
 			<div className="footer-title">sandbox</div>
 			<div className="footer-inner-content">
 				<div className="footer-address">
-          Sandbox @ Yale<br/>
-          254 Elm Street<br/>
-          New Haven, CT 06511
-        </div>
-        <div className="footer-email-section">
-          <div className="footer-email-text">stay updated</div>
-          <EmailEntry/>
-        </div>
-        <div className="footer-links">
-          <div className="footer-link" href="https://github.com/sandbox-co" target="_blank">
-            <div className="footer-link-text">Github</div>
-            <img className="footer-link-image" src={require("../assets/githubIcon.png")}/>
-          </div>
-          <div className="footer-link" href="https://medium.com/yale-sandbox" target="_blank">
-            <div className="footer-link-text">Medium</div>
-            <img className="footer-link-image" src={require("../assets/mediumIcon.png")}/>
-          </div>
-          <div className="footer-link">
-            <div className="footer-link-text">YouTube</div>
-            <img className="footer-link-image" src={require("../assets/youtubeIcon.png")}/>
-          </div>
-        </div>
+					Sandbox @ Yale
+					<br />
+					254 Elm Street
+					<br />
+					New Haven, CT 06511
+				</div>
+				<div className="footer-email-section">
+					<div className="footer-email-text">stay updated</div>
+					<EmailEntry />
+				</div>
+				<div className="footer-links">
+					<div
+						className="footer-link"
+						href="https://github.com/sandbox-co"
+						target="_blank"
+					>
+						<div className="footer-link-text">Github</div>
+						<img
+							className="footer-link-image"
+							src={require("../assets/githubIcon.png")}
+						/>
+					</div>
+					<div
+						className="footer-link"
+						href="https://medium.com/yale-sandbox"
+						target="_blank"
+					>
+						<div className="footer-link-text">Medium</div>
+						<img
+							className="footer-link-image"
+							src={require("../assets/mediumIcon.png")}
+						/>
+					</div>
+					<div className="footer-link">
+						<div className="footer-link-text">YouTube</div>
+						<img
+							className="footer-link-image"
+							src={require("../assets/youtubeIcon.png")}
+						/>
+					</div>
+				</div>
 			</div>
 		</div>
-
 	</div>
 );
 

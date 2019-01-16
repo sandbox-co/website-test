@@ -14,8 +14,15 @@ const About = ({ width, height }) => (
 	<Element className="section-container" id="about" name="about-section">
 		<Gradient width={width} height={height} />
 		<Dots width={width} height={height} />
-		<Parallax className="catch-phrase" offsetYMax={"100px"} offsetYMin={"-400px"} slowerScrollRate>
-			we turn creative students into technical superstars
+		<Parallax
+			className="catch-phrase"
+			offsetYMax={"100px"}
+			offsetYMin={"-400px"}
+			slowerScrollRate
+		>
+			we turn creative students
+			<br />
+			into technical superstars
 		</Parallax>
 	</Element>
 );

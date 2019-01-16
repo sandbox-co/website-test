@@ -8,21 +8,29 @@
 }
 
 .learn-title-section {
-	padding-left: 75px;
+	padding-left: 50px;
 	display: flex;
 	align-items: center;
 	flex-direction: row;
-}
-
-.learn-title-container {
-	margin-bottom: 30px;
+	@media (max-width: 800px) {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
 }
 
 .learn-icon-container {
-	margin-right: 15px;
+	margin-right: 30px;
 	width: 30px;
 }
 
+.learn-subtitle {
+	font-size: 18pt;
+	font-weight: 500;
+	/*font-weight: bold;*/
+	@media (max-width: 800px) {
+		font-size: 16pt;
+	}
+}
 
 .stack-container {
 	display: flex;
@@ -46,18 +54,24 @@
 	&:hover {
 		transform: scale(1.05);
 	}
+	@media (max-width: 800px) {
+		margin: 0 30px 50px 30px;
+	}
 }
 
 .logo {
 	max-height: 80px;
+	@media (max-width: 800px) {
+		max-height: 50px;
+	}
 }
 
 .projects-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 30px;
+	flex-wrap: wrap;
 }
 
 .project-container {
@@ -65,18 +79,17 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	margin: 5px 20px 0 20px;
+	margin: 20px;
 	cursor: pointer;
 	transition: all 250ms cubic-bezier(0.21, 0.94, 0.64, 0.99);
-  &:hover {
-    transform: scale(1.05);
-  }
+	&:hover {
+		transform: scale(1.05);
+	}
 }
 
 .project-icon {
 	margin-bottom: 5px;
 }
-
 
 .learn-footer-container {
 	width: 100%;
