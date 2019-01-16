@@ -8,7 +8,9 @@ const Gradient = ({ width }) => {
 	const height =
 		((width - min_width) * (max_height - min_height)) / (max_width - min_width) + min_height;
 
-	const line = Math.sqrt(Math.pow(width * 1.01, 2) - Math.pow(width, 2));
+	const scalar = width >= 1000 ? 1.002 : 1.01;
+	const line = Math.sqrt(Math.pow(width * scalar, 2) - Math.pow(width, 2));
+
 	return (
 		<span className="gradient-container">
 			<svg width={width} height={height} fill="none" xmlns="http://www.w3.org/2000/svg">
