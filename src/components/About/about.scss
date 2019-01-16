@@ -15,21 +15,13 @@
 	font-size: 20pt;
 }
 
-.about-background-gradient {
-	position: absolute;
-	top: 90vh;
-	width: 100vw;
-	padding: 250px;
-	background: radial-gradient(507.00px at 49.47% 49.85%, $blue  10%, $purple 100%);
-	transform: rotate(173deg);
-}
-
-
 .dots-container {
 	position: absolute;
-  width: 100vw;
-  height: 620px;
-  top: 75vh;
+	width: 100vw;
+	height: 620px;
+	top: 75vh;
+	margin: 0;
+	padding: 0;
 }
 
 .dot {

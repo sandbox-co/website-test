@@ -16,8 +16,8 @@ import ScrollIcon from "./ScrollIcon";
 class App extends Component {
   state = {
     screen: {
-      width: window.innerWidth,
-      height: window.innerHeight
+      width: window.outerWidth,
+      height: window.outerHeight
     }
   };
 
@@ -33,8 +33,8 @@ class App extends Component {
   onResize = () => {
     this.setState({
       screen: {
-        width: window.innerWidth,
-        height: window.innerHeight
+        width: window.outerWidth,
+        height: window.outerHeight
       }
     });
   };

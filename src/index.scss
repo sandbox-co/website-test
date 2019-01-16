@@ -1,11 +1,13 @@
 @font-face {
-  font-family: 'sofia-pro';
-  src: local('sofia-pro'), url(./assets/sofia-pro-regular-webfont.ttf) format('truetype');
+  font-family: "sofia-pro";
+  src: local("sofia-pro"),
+    url(./assets/sofia-pro-regular-webfont.ttf) format("truetype");
 }
 
 #root {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 body {
@@ -15,13 +17,13 @@ body {
   height: 100%;
   overflow-x: hidden;
   overscroll-behavior: none;
-  -ms-overflow-style: none;  
+  -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
-  font-family: 'sofia-pro', Fallback, sans-serif;
+  font-family: "sofia-pro", Fallback, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-body::-webkit-scrollbar { 
+body::-webkit-scrollbar {
   display: none;
 }
 
