@@ -6,14 +6,21 @@ const Gradient = ({ width }) => {
 	const max_width = 1920;
 	const min_width = 400;
 	const height =
-		((width - min_width) * (max_height - min_height)) / (max_width - min_width) + min_height;
+		((width - min_width) * (max_height - min_height)) /
+			(max_width - min_width) +
+		min_height;
 
 	const scalar = width >= 1000 ? 1.002 : 1.01;
 	const line = Math.sqrt(Math.pow(width * scalar, 2) - Math.pow(width, 2));
 
 	return (
 		<span className="gradient-container">
-			<svg width={width} height={height} fill="none" xmlns="http://www.w3.org/2000/svg">
+			<svg
+				width={width}
+				height={height}
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
 				<path
 					d={`M0 ${height} L${width} ${height - line} V0 L0 ${line} Z`}
 					fill="url(#about_radial)"
@@ -28,8 +35,8 @@ const Gradient = ({ width }) => {
 						gradientUnits="userSpaceOnUse"
 						gradientTransform="translate(727.308 323.288) rotate(-97.7837) scale(307.002 1560.83)"
 					>
-						<stop stop-color="#000AFD" />
-						<stop offset="1" stop-color="#9554FF" />
+						<stop stopColor="#000AFD" />
+						<stop offset="1" stopColor="#9554FF" />
 					</radialGradient>
 				</defs>
 			</svg>

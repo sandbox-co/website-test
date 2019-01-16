@@ -84,7 +84,7 @@ const Learn = props => (
 		<div className="subsection-wrapper">
 			<img className="subsection-icon" src={learn_icon} />
 			<div className="subsection-subtitle">
-				learn the stack used by the top tech companies
+				Learn the stack used by the top tech companies
 			</div>
 		</div>
 
@@ -99,7 +99,7 @@ const Learn = props => (
 		<div className="subsection-wrapper">
 			<img className="subsection-icon" src={projects_icon} />
 			<div className="subsection-subtitle">
-				with projects that are fun and experiential
+				With projects that are fun and experiential
 			</div>
 		</div>
 
