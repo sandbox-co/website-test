@@ -21,6 +21,9 @@
 	font-size: 20pt;
 	font-weight: 700;
 	color: $nearblack;
+	@media (max-width: 800px) {
+		font-size: 18pt;
+	}
 }
 
 .person-subtitle {
@@ -32,6 +35,9 @@
 	font-weight: 500;
 	width: 200px;
 	color: $pink;
+	@media (max-width: 800px) {
+		font-size: 14pt;
+	}
 }
 
 .person-card {

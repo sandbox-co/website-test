@@ -147,6 +147,7 @@
 }
 
 .subsection-subtitle {
+  color: $nearblack;
   font-size: 16pt;
   font-weight: 600;
   line-height: 22px;
@@ -154,6 +155,10 @@
   @media (max-width: 800px) {
     font-size: 14pt;
   }
+}
+
+.subsection-subtitle.white {
+  color: $nearwhite;
 }
 
 .section-container {
