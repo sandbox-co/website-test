@@ -147,11 +147,12 @@
 }
 
 .subsection-subtitle {
-  font-size: 18pt;
-  font-weight: 500;
+  font-size: 16pt;
+  font-weight: 600;
+  line-height: 22px;
   /*font-weight: bold;*/
   @media (max-width: 800px) {
-    font-size: 16pt;
+    font-size: 14pt;
   }
 }
 
