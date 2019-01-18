@@ -14,9 +14,7 @@ const Footer = ({ width }) => {
 				<svg
 					width={width}
 					height={width <= 950 ? MOBILE_HEIGHT : DESKTOP_HEIGHT}
-					viewBox={`0 0 ${width} ${
-						width <= 950 ? MOBILE_HEIGHT : DESKTOP_HEIGHT
-					}`}
+					viewBox={`0 0 ${width} ${width <= 950 ? MOBILE_HEIGHT : DESKTOP_HEIGHT}`}
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
 				>
@@ -34,9 +32,7 @@ const Footer = ({ width }) => {
 						</linearGradient>
 					</defs>
 					<path
-						d={`M0 ${line} L${width} 0 V${
-							width <= 950 ? MOBILE_HEIGHT : DESKTOP_HEIGHT
-						} H0 V170 Z`}
+						d={`M0 ${line} L${width} 0 V${width <= 950 ? MOBILE_HEIGHT : DESKTOP_HEIGHT} H0 V170 Z`}
 						fill="url(#paint0_linear)"
 					/>
 				</svg>
@@ -55,13 +51,7 @@ const Footer = ({ width }) => {
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
 				>
-					<circle
-						cx="25.0864"
-						cy="25.3015"
-						r="24.5"
-						fill="white"
-						fillOpacity="0.1"
-					/>
+					<circle cx="25.0864" cy="25.3015" r="24.5" fill="white" fillOpacity="0.1" />
 				</svg>
 			</Parallax>
 			<Parallax
@@ -74,19 +64,11 @@ const Footer = ({ width }) => {
 				<svg
 					width={width}
 					height={width <= 950 ? 800 : 520}
-					viewBox={`0 0 ${width} ${
-						width <= 950 ? MOBILE_HEIGHT : DESKTOP_HEIGHT
-					}`}
+					viewBox={`0 0 ${width} ${width <= 950 ? MOBILE_HEIGHT : DESKTOP_HEIGHT}`}
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
 				>
-					<circle
-						cx={width / 2}
-						cy="250"
-						r="12.5"
-						fill="white"
-						fillOpacity="0.1"
-					/>
+					<circle cx={width / 2} cy="250" r="12.5" fill="white" fillOpacity="0.1" />
 				</svg>
 			</Parallax>
 
@@ -105,33 +87,20 @@ const Footer = ({ width }) => {
 						<EmailEntry />
 					</div>
 					<div className="footer-links">
-						<div
-							className="footer-link"
-							href="https://github.com/sandbox-co"
-							target="_blank"
-						>
+						<div className="footer-link" href="https://github.com/sandbox-co" target="_blank">
 							<div className="footer-link-text">Github</div>
-							<img
-								className="footer-link-image"
-								src={require("../assets/githubIcon.png")}
-							/>
+							<img className="footer-link-image" src={require("../assets/githubIcon.png")} alt="" />
 						</div>
-						<div
-							className="footer-link"
-							href="https://medium.com/yale-sandbox"
-							target="_blank"
-						>
+						<div className="footer-link" href="https://medium.com/yale-sandbox" target="_blank">
 							<div className="footer-link-text">Medium</div>
-							<img
-								className="footer-link-image"
-								src={require("../assets/mediumIcon.png")}
-							/>
+							<img className="footer-link-image" src={require("../assets/mediumIcon.png")} alt="" />
 						</div>
 						<div className="footer-link">
 							<div className="footer-link-text">YouTube</div>
 							<img
 								className="footer-link-image"
 								src={require("../assets/youtubeIcon.png")}
+								alt=""
 							/>
 						</div>
 					</div>

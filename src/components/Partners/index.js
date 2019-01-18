@@ -30,7 +30,7 @@ const Partners = props => {
 			<Header title="sandbox partners" subtitle="we're powered by the best" />
 
 			<div className="subsection-wrapper">
-				<img className="subsection-icon" src={partners1} />
+				<img className="subsection-icon" src={partners1} alt="" />
 				<div className="subsection-subtitle">
 					Our partners give us technical
 					<br />
@@ -45,7 +45,7 @@ const Partners = props => {
 			</div>
 
 			<div className="subsection-wrapper">
-				<img className="subsection-icon" src={partners2} />
+				<img className="subsection-icon" src={partners2} alt="" />
 				<div className="subsection-subtitle">
 					We give back to our partners
 					<br />

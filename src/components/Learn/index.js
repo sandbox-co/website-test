@@ -82,10 +82,8 @@ const Learn = props => (
 		<Header title="sandbox learn" subtitle="technical bootcamp for students" />
 
 		<div className="subsection-wrapper">
-			<img className="subsection-icon" src={learn_icon} />
-			<div className="subsection-subtitle">
-				Learn the stack used by the top tech companies
-			</div>
+			<img className="subsection-icon" src={learn_icon} alt="" />
+			<div className="subsection-subtitle">Learn the stack used by the top tech companies</div>
 		</div>
 
 		<Parallax offsetYMin={"0px"} offsetYMax={"50px"}>
@@ -97,39 +95,31 @@ const Learn = props => (
 		</Parallax>
 
 		<div className="subsection-wrapper">
-			<img className="subsection-icon" src={projects_icon} />
-			<div className="subsection-subtitle">
-				With projects that are fun and experiential
-			</div>
+			<img className="subsection-icon" src={projects_icon} alt="" />
+			<div className="subsection-subtitle">With projects that are fun and experiential</div>
 		</div>
 
 		<Parallax offsetYMin={"0px"} offsetYMax={"50px"}>
 			<div className="projects-container">
 				<div
 					className="project-container"
-					onClick={() =>
-						window.open("https://github.com/sandbox-co/social-card")
-					}
+					onClick={() => window.open("https://github.com/sandbox-co/social-card")}
 				>
-					<img className="project-icon" src={social_card} />
+					<img className="project-icon" src={social_card} alt="" />
 					<div className="caption space-top">Social Card</div>
 				</div>
 				<div
 					className="project-container"
-					onClick={() =>
-						window.open("https://github.com/sandbox-co/weather-app")
-					}
+					onClick={() => window.open("https://github.com/sandbox-co/weather-app")}
 				>
-					<img className="project-icon" src={clouds} />
+					<img className="project-icon" src={clouds} alt="" />
 					<div className="caption space-top">Weather App</div>
 				</div>
 				<div
 					className="project-container"
-					onClick={() =>
-						window.open("https://github.com/sandbox-co/todo-starter")
-					}
+					onClick={() => window.open("https://github.com/sandbox-co/todo-starter")}
 				>
-					<img className="project-icon" src={todo} />
+					<img className="project-icon" src={todo} alt="" />
 					<div className="caption space-top">Todo App</div>
 				</div>
 			</div>
@@ -137,10 +127,7 @@ const Learn = props => (
 
 		<div className="action">
 			see the curriculum
-			<img
-				src={require("../../assets/learnArrow.png")}
-				className="action-arrow"
-			/>
+			<img src={require("../../assets/learnArrow.png")} alt="" className="action-arrow" />
 		</div>
 	</Element>
 );

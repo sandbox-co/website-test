@@ -1,10 +1,10 @@
 import React from "react";
 import { Element } from "react-scroll";
-import { Parallax } from "react-scroll-parallax";
+// import { Parallax } from "react-scroll-parallax";
 
 import "./events.scss";
 
-import Section from "../universal/Section";
+// import Section from "../universal/Section";
 import Header from "../universal/Header";
 import Gradient from "./Gradient";
 import computer from "./computer.svg";
@@ -21,7 +21,7 @@ const Events = ({ width, height }) => (
 			/>
 
 			<div className="subsection-wrapper">
-				<img className="subsection-icon" src={computer} />
+				<img className="subsection-icon" src={computer} alt="" />
 				<div className="subsection-subtitle white">
 					Learn by doing with frequent,
 					<br />
@@ -30,7 +30,7 @@ const Events = ({ width, height }) => (
 			</div>
 
 			<div className="subsection-wrapper">
-				<img className="subsection-icon" src={balloon_icon} />
+				<img className="subsection-icon" src={balloon_icon} alt="" />
 				<div className="subsection-subtitle white">
 					Hear from experienced
 					<br />
