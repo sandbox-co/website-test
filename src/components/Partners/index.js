@@ -4,6 +4,7 @@ import { Element } from "react-scroll";
 import Header from "../universal/Section";
 import partners1 from "./partners1.svg";
 import partners2 from "./partners2.svg";
+import sandboxers from "./sandboxers.svg";
 
 const partners = [
 	{
@@ -16,12 +17,34 @@ const partners = [
 	}
 ];
 
+const perks = [
+	{
+		img: require("./sandboxers.svg"),
+		caption: "Intros to sandbox talent"
+	},
+	{
+		img: require("./logos.svg"),
+		caption: "Logos on sandbox materials"
+	},
+	{
+		img: require("./shoutout.svg"),
+		caption: "Shoutout at sandbox events"
+	}
+];
+
 const Tech = ({ url, img, i }) => (
 	// <Parallax offsetYMin={`${50 * (i - 2)}px`} offsetYMax={`${-50 * (i - 2)}px`}>
 	<div className="tech-container" onClick={() => window.open(url)}>
 		<img className="logo" src={img} alt="loading" />
 	</div>
 	// </Parallax>
+);
+
+const Perk = ({ caption, img, url, i }) => (
+	<div key={i} className="project-container">
+		<img className="project-icon" src={img} alt="" />
+		<div className="caption space-top">{caption}</div>
+	</div>
 );
 
 const Partners = props => {
@@ -38,7 +61,7 @@ const Partners = props => {
 				</div>
 			</div>
 
-			<div className={"stack-container"}>
+			<div className="stack-container">
 				{partners.map((item, i) => (
 					<Tech key={i} i={i} {...item} />
 				))}
@@ -51,6 +74,15 @@ const Partners = props => {
 					<br />
 					because they help us a lot
 				</div>
+			</div>
+			<div className="projects-container">
+				{perks.map((item, i) => (
+					<Perk key={i} i={i} {...item} />
+				))}
+			</div>
+			<div className="action">
+				become a partner
+				<img src={require("../../assets/learnArrow.png")} alt="" className="action-arrow" />
 			</div>
 		</Element>
 	);

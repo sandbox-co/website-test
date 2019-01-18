@@ -14,6 +14,24 @@ import todo from "./todo.svg";
 import learn_icon from "./learn_icon.svg";
 import projects_icon from "./projects_icon.svg";
 
+const projects = [
+	{
+		caption: "Social Card",
+		img: require("./social_card.svg"),
+		url: "https://github.com/sandbox-co/social-card"
+	},
+	{
+		caption: "Weather App",
+		img: require("./clouds.svg"),
+		url: "https://github.com/sandbox-co/weather-app"
+	},
+	{
+		caption: "Todo App",
+		img: require("./todo.svg"),
+		url: "https://github.com/sandbox-co/todo-starter"
+	}
+];
+
 const stack = [
 	{
 		title: "React",
@@ -77,6 +95,13 @@ const Tech = ({ title, url, img, i }) => (
 	// </Parallax>
 );
 
+const Project = ({ caption, img, url, i }) => (
+	<div key={i} className="project-container" onClick={() => window.open(url)}>
+		<img className="project-icon" src={img} alt="" />
+		<div className="caption space-top">{caption}</div>
+	</div>
+);
+
 const Learn = props => (
 	<Element className="section-container" name="learn-section">
 		<Header title="sandbox learn" subtitle="technical bootcamp for students" />
@@ -101,27 +126,9 @@ const Learn = props => (
 
 		<Parallax offsetYMin={"0px"} offsetYMax={"50px"}>
 			<div className="projects-container">
-				<div
-					className="project-container"
-					onClick={() => window.open("https://github.com/sandbox-co/social-card")}
-				>
-					<img className="project-icon" src={social_card} alt="" />
-					<div className="caption space-top">Social Card</div>
-				</div>
-				<div
-					className="project-container"
-					onClick={() => window.open("https://github.com/sandbox-co/weather-app")}
-				>
-					<img className="project-icon" src={clouds} alt="" />
-					<div className="caption space-top">Weather App</div>
-				</div>
-				<div
-					className="project-container"
-					onClick={() => window.open("https://github.com/sandbox-co/todo-starter")}
-				>
-					<img className="project-icon" src={todo} alt="" />
-					<div className="caption space-top">Todo App</div>
-				</div>
+				{projects.map((item, i) => (
+					<Project key={i} i={i} {...item} />
+				))}
 			</div>
 		</Parallax>
 
