@@ -98,7 +98,7 @@ const People = props => {
 
 			<div className="people-container">{BoardPeople}</div>
 
-			<div className="subsection-wrapper">
+			{/*<div className="subsection-wrapper">
 				<img className="subsection-icon" src={other_people_icon} />
 				<div className="subsection-subtitle">
 					Sandbox is made possible by
@@ -107,7 +107,7 @@ const People = props => {
 				</div>
 			</div>
 
-			<div className="people-container">{OtherPeople}</div>
+			<div className="people-container">{OtherPeople}</div>*/}
 		</Element>
 	);
 };
